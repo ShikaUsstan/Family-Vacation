@@ -1,0 +1,364 @@
+// The Scaterring!
+// ---------------
+
+@function random-range ($min: 0, $max: 100) {
+  @return random($max - $min) + $min;
+}
+
+.is-scattered .card:nth-of-type(9n+1) {
+    -webkit-transform-origin: -80% -15%;
+    -webkit-transform: rotateZ(1deg) translate3d(0, 0, 0);
+    transform-origin: -80% -15%;
+    transform: rotateZ(1deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+2) {
+    -webkit-transform-origin: -2% -81%;
+    -webkit-transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    transform-origin: -2% -81%;
+    transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+3) {
+    -webkit-transform-origin: 89% -52%;
+    -webkit-transform: rotateZ(3deg) translate3d(0, 0, 0);
+    transform-origin: 89% -52%;
+    transform: rotateZ(3deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+4) {
+    -webkit-transform-origin: -61% -89%;
+    -webkit-transform: rotateZ(2deg) translate3d(0, 0, 0);
+    transform-origin: -61% -89%;
+    transform: rotateZ(2deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+5) {
+    -webkit-transform-origin: -21% 18%;
+    -webkit-transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    transform-origin: -21% 18%;
+    transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+6) {
+    -webkit-transform-origin: -94% -67%;
+    -webkit-transform: rotateZ(-3deg) translate3d(0, 0, 0);
+    transform-origin: -94% -67%;
+    transform: rotateZ(-3deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+7) {
+    -webkit-transform-origin: -97% -49%;
+    -webkit-transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    transform-origin: -97% -49%;
+    transform: rotateZ(-2deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+8) {
+    -webkit-transform-origin: -59% 8%;
+    -webkit-transform: rotateZ(-1deg) translate3d(0, 0, 0);
+    transform-origin: -59% 8%;
+    transform: rotateZ(-1deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+.is-scattered .card:nth-of-type(9n+9) {
+    -webkit-transform-origin: -22% -12%;
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0, 0);
+    transform-origin: -22% -12%;
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.is-offscreen--r {
+    -webkit-transform: translate(1000px, 0px) rotateZ(30deg) !important;
+    transform: translate(1000px, 0px) rotateZ(30deg) !important;
+    will-change: transform;
+}
+
+.is-offscreen--l {
+    -webkit-transform: translate(-1000px, 0px) rotateZ(-20deg) !important;
+    transform: translate(-1000px, 0px) rotateZ(-20deg) !important;
+    will-change: transform;
+}
+
+body, html {
+  overflow: hidden;
+  background: #464646;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img{
+	  border-radius: 15px;
+}
+
+.deck {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-style: dotted;
+    border-width: medium;
+    border-radius: 15px;
+    border-color: whitesmoke;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+.body-message {
+  color: #999;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Alabama {
+    background: #ffffff url('../images/Alabama.png') no-repeat;
+    background-size: contain;
+}
+
+.Arizona {
+    background: #ffffff url('../images/Arizona.png') no-repeat;
+    background-size: contain;
+}
+
+.Arkansas {
+    background: #ffffff url('../images/Arkansas.png') no-repeat;
+    background-size: contain;
+}
+
+.California {
+    background: #ffffff url('../images/California.png') no-repeat;
+    background-size: contain;
+}
+
+.Colorado {
+    background: #ffffff url('../images/Colorado.png') no-repeat;
+    background-size: contain;
+}
+
+.Florida {
+    background: #ffffff url('../images/Florida.png') no-repeat;
+    background-size: contain;
+}
+
+.Georgia {
+    background: #ffffff url('../images/Georgia.png') no-repeat;
+    background-size: contain;
+}
+
+.Idaho {
+    background: #ffffff url('../images/Idaho.png') no-repeat;
+    background-size: contain;
+}
+
+.Illinois {
+    background: #ffffff url('../images/Illinois.png') no-repeat;
+    background-size: contain;
+}
+
+.Indiana {
+    background: #ffffff url('../images/Indiana.png') no-repeat;
+    background-size: contain;
+}
+
+.Iowa {
+    background: #ffffff url('../images/Iowa.png') no-repeat;
+    background-size: contain;
+}
+
+.Kansas {
+    background: #ffffff url('../images/Kansas.png') no-repeat;
+    background-size: contain;
+}
+
+.Kentucky {
+    background: #ffffff url('../images/Kentucky.png') no-repeat;
+    background-size: contain;
+}
+
+.Louisiana {
+    background: #ffffff url('../images/Louisiana.png') no-repeat;
+    background-size: contain;
+}
+
+.Maine {
+    background: #ffffff url('../images/Maine.png') no-repeat;
+    background-size: contain;
+}
+
+.Michigan {
+    background: #ffffff url('../images/Michigan.png') no-repeat;
+    background-size: contain;
+}
+
+.Minnesota {
+    background: #ffffff url('../images/Minnesota.png') no-repeat;
+    background-size: contain;
+}
+
+.Mississippi {
+    background: #ffffff url('../images/Mississippi.png') no-repeat;
+    background-size: contain;
+}
+
+.Missouri {
+    background: #ffffff url('../images/Missouri.png') no-repeat;
+    background-size: contain;
+}
+
+.Montana {
+    background: #ffffff url('../images/Montana.png') no-repeat;
+    background-size: contain;
+}
+
+.Nebraska {
+    background: #ffffff url('../images/Nebraska.png') no-repeat;
+    background-size: contain;
+}
+
+.Nevada {
+    background: #ffffff url('../images/Nevada.png') no-repeat;
+    background-size: contain;
+}
+
+.New-Jersey {
+    background: #ffffff url('../images/New Jersey.png') no-repeat;
+    background-size: contain;
+}
+
+.New-Mexico {
+    background: #ffffff url('../images/New Mexico.png') no-repeat;
+    background-size: contain;
+}
+
+.New-York {
+    background: #ffffff url('../images/New York.png') no-repeat;
+    background-size: contain;
+}
+
+.North-Carolina {
+    background: #ffffff url('../images/North Carolina.png') no-repeat;
+    background-size: contain;
+}
+
+.North-Dakota {
+    background: #ffffff url('../images/North Dakota.png') no-repeat;
+    background-size: contain;
+}
+
+.Ohio {
+    background: #ffffff url('../images/Ohio.png') no-repeat;
+    background-size: contain;
+}
+
+.Oklahoma {
+    background: #ffffff url('../images/Oklahoma.png') no-repeat;
+    background-size: contain;
+}
+
+.Oregon {
+    background: #ffffff url('../images/Oregon.png') no-repeat;
+    background-size: contain;
+}
+
+.Pennsylvania {
+    background: #ffffff url('../images/Pennsylvania.png') no-repeat;
+    background-size: contain;
+}
+
+.South-Carolina {
+    background: #ffffff url('../images/South Carolina.png') no-repeat;
+    background-size: contain;
+}
+
+.South-Dakota {
+    background: #ffffff url('../images/South Dakota.png') no-repeat;
+    background-size: contain;
+}
+
+.Tennessee {
+    background: #ffffff url('../images/Tennessee.png') no-repeat;
+    background-size: contain;
+}
+
+.Texas {
+    background: #ffffff url('../images/Texas.png') no-repeat;
+    background-size: contain;
+}
+
+.Utah {
+    background: #ffffff url('../images/Utah.png') no-repeat;
+    background-size: contain;
+}
+
+.Virginia {
+    background: #ffffff url('../images/Virginia.png') no-repeat;
+    background-size: contain;
+}
+
+.Washington {
+    background: #ffffff url('../images/Washington.png') no-repeat;
+    background-size: contain;
+}
+
+.West-Virginia {
+    background: #ffffff url('../images/West Virginia.png') no-repeat;
+    background-size: contain;
+}
+
+.Wisconsin {
+    background: #ffffff url('../images/Wisconsin.png') no-repeat;
+    background-size: contain;
+}
+
+.Wyoming {
+    background: #ffffff url('../images/Wyoming.png') no-repeat;
+    background-size: contain;
+}
+
+#zoomcontain {
+    z-index: 999998;
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#zoom {
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg) translateY(-100%);
+    background-position: center;
+    width: 100vh;
+    height: 100vw;
+    transform-origin: top left;
+    background-color: black;
+}

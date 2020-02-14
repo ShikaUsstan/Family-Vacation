@@ -1,16 +1,34 @@
+﻿<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="deck.css">
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/deck.css">
+    <title>Family Vacation</title>
 </head>
 <body>
-<div id="decka" class="deck is-scattered">
-</div>
-<div id="deckb" class="deck is-scattered">
-</div>
-<div id="deckc" class="deck is-scattered">
-</div>
-<p class="body-message">To restart game, refresh screen.</p>
-<script src="jquery.min.js"></script>
-<script src="deck.js"></script>
+    <div id="decka" class="deck is-scattered">
+    </div>
+    <div id="deckb" class="deck is-scattered">
+    </div>
+    <div id="deckc" class="deck is-scattered">
+    </div>
+    <p class="body-message">CLICK CARD TO ZOOM IN<br />CLICK ANYWHERE ELSE FOR NEXT CARD</p>
+    <div id="zoomcontain"><div id="zoom"></div></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/css3caching.js"></script>
+    <script type="text/javascript" src="scripts/deck.js"></script>
 </body>
 </html>
